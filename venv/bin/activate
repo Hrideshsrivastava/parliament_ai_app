@@ -1,0 +1,7 @@
+
+import requests
+
+url = "https://eparlib.sansad.in/handle/123456789/7/simple-search?query=&filter_field_1=title&filter_type_1=equals&filter_value_1=Lok+Sabha+Debates&sort_by=dc.date_dt&order=desc&rpp=20&etal=0&start=40"
+
+r = requests.get(url)
+print("Length without headers:", len(r.text))
